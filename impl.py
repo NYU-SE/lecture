@@ -8,4 +8,10 @@ def fibonacci(n):
     if n <= 1:
         return 1
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        a = 1
+        b = 1
+        for _ in range(n - 1):
+            c = b
+            b = a + b
+            a = c
+        return b
