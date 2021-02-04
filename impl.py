@@ -10,7 +10,7 @@ def fibonacci(n):
     else:
         a = 1
         b = 1
-        for _ in range(n):
+        for _ in range(n - 1):
             c = b
             b = a + b
             a = c
